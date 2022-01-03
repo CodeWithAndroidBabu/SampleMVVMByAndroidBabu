@@ -15,8 +15,9 @@ object AppConst {
             const val IMAGES = "v2/list"
         }
     }
+    /*interface Key*/
 
-    /*interface Key
+    interface Action{
 
-    interface Action*/
+    }
 }
