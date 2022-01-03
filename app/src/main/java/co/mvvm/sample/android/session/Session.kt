@@ -28,7 +28,6 @@ class Session @Inject constructor(@ApplicationContext context: Context) {
         sharedPreferences.edit()
     }
 
-
     fun <T> save(key: String, value: T?) {
         when (value) {
             is String -> {
