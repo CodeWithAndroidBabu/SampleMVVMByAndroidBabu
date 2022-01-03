@@ -9,6 +9,7 @@ import java.lang.Exception
 abstract class BaseNetworkCall {
     suspend fun <T> networkRequest(apiCall: suspend () -> Response<T>): NetworkResult<T> {
         try {
+            val name = ""
             val response = apiCall.invoke()
             if (response.isSuccessful) {
                 response.body()?.let {
